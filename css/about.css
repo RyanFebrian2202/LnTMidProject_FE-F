@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@500&family=Playfair+Display:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: large;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 220px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+h1 {
+    font-family: 'Poppins';
+    color: black;
+    font-size: 70px;
+}
+
+h2 {
+    font-family: 'Poppins';
+    color: black;
+    font-size: xxx-large;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 120px;
+    gap: 100px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(rgba(228, 228, 228, 0.25), rgba(9, 23, 45, 0.25)),url(../assets/background\ real.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.part-one{
+    display: flex;
+    gap: 80px;
+}
+
+.photo{
+    width: 100%;
+}
+
+.desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    font-size: x-large;
+    text-align: center;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+
+    animation-name: kedap;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes kedap{
+    0%{
+        color: white;
+    }
+
+    50%{
+        color: black;
+        text-shadow:
+        -1px -1px 0 #ffffff,
+        1px -1px 0 #ffffff,
+        -1px 1px 0 #ffffff,
+        1px 1px 0 #ffffff;
+    }
+
+    100%{
+        color: white;
+    }
+}
+
+.part-two{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.part-two h2, .part-three h2{
+    text-align: center;
+}
+
+table, th, td{
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: "Poppins";
+}
+
+td{
+    height: 100px;
+}
+
+th {
+    background-color: #09172d;
+    color: white;
+}
+
+tr
+{
+    background-color: #f2f2f2;
+}
+
+.jenjang{
+    width: 120px;
+}
+
+.instansi{
+    width: 150px;
+}
+
+.tahun{
+    width: 120px;
+}
+
+.part-three{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.list-container{
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.software, .bahasa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 40px;
+    background-color: #09172d;
+    padding: 40px 40px;
+    width: 420px;
+    height: 250px;
+}
+
+.software h3, .bahasa h3, li{
+    text-align: center;
+    font-family: "Poppins";
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .photo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .part-one{
+        flex-direction: column;
+    }
+
+    .list-container{
+        gap: 80px;
+    }
+
+    .software, .bahasa{
+        padding: 20px 20px;
+        height: 220px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .desc{
+        font-size: large;
+    }
+
+    h2{
+        font-size: xx-large;
+    }
+
+    table, th, td{
+        font-size: 8px;
+    }
+
+    .jenjang{
+        width: 40px;
+    }
+    
+    .instansi{
+        width: 50px;
+    }
+    
+    .tahun{
+        width: 50px;
+    }
+
+    .list-container{
+        gap: 40px;
+    }
+
+    .software, .bahasa{
+        border-radius: 20px;
+        padding: 10px 10px;
+        width: 120px;
+        height: 150px;
+        font-size: 10px;
+    }
+
+    hr{
+        width: 70px;
+    }
+}

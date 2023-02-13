@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@500&family=Playfair+Display:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: large;
+}
+
+hr {
+    margin-top: 30px;
+    width: 1500px;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+}
+
+h1 {
+    font-family: 'Poppins';
+    color: black;
+    font-size: 70px;
+}
+
+h2 {
+    font-family: 'Poppins';
+    color: black;
+    font-size: xx-large;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 120px;
+    gap: 60px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(rgba(228, 228, 228, 0.25), rgba(9, 23, 45, 0.25)),url(../assets/background\ real.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main h1{
+    text-align: center;
+}
+
+.recent-text{
+    font-size: xxx-large;
+}
+
+.porto-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.porto-cards {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.porto-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 40px;
+    background-color: #09172d;
+    padding: 40px 40px;
+    width: 420px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.452);
+    height: 500px;
+    gap: 20px;
+}
+
+.porto-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.porto-content h2{
+    color: white;
+}
+
+.porto-image img {
+    width: 340px;
+    height: 270px;
+}
+
+@media only screen and (max-width: 768px) {
+    .porto-cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .porto-card {
+        width: 620px;
+    }
+
+    .porto-image img {
+        width: 540px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    h1{
+        font-size: xx-large;
+    }
+
+    .recent-text{
+        font-size: x-large;
+    }
+    
+    .porto-card {
+        width: 252px;
+        gap: 10px;
+        height: 250px;
+        padding: 20px 30px;
+    }
+
+    .porto-image img {
+        width: 230px;
+        height: 150px;
+    }
+
+    .porto-content h2{
+        font-size: large;
+    }
+}
